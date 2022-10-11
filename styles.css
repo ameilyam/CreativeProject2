@@ -37,6 +37,8 @@ p {
 img {
   display: flex;
   margin: auto;
+  width: 600px;
+  height: auto;
 }
 
 footer {
