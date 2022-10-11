@@ -19,7 +19,10 @@ document.getElementById("searchMealSubmit").addEventListener("click", function(e
       let results = "";
       results += '<h2>Recipe for ' + json.strMeal + "</h2>";
       results += '<p>Category: ' + json.strCategory + '</p>';
+<<<<<<< HEAD
       results += '<p>Instructions: ' + json.strInstructions + '</p>';
+=======
+>>>>>>> c5a8b03e0fd5e85c2f920c8a7e4785005402b92b
       results += '<img src="' + json.strMealThumb + '"/>';
       results += "<br/>";
       document.getElementById("searchMealResults").innerHTML = results;
