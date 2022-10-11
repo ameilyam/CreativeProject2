@@ -11,9 +11,10 @@ document.getElementById("searchMealSubmit").addEventListener("click", function(e
       return response.json();
     }).then(function(json) {	
       let results = "";
-      for (let i=0; i < json.list.length; i++) {
-      	results += "<h2>" + json.list[i] + "</h2>";
-      }
-      document.getElementById("forecastResults").innerHTML = results;
+      results += '<h2>Recipe for ' + json.strMeal + "</h2>";
+      results += '<p>Category: ' + json.strCategory + '</p>';
+      results += '<img src="' + json.strMealThumb + '"/>';
+      results += "<br/>";
+      document.getElementById("searchMealResults").innerHTML = results;
     });
 });
