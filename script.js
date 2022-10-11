@@ -18,10 +18,10 @@ document.getElementById("searchMealSubmit").addEventListener("click", function(e
     }).then(function(json) {
       console.log(json);
       let results = "";
-      results += '<h2>Recipe for ' + json.strMeal + "</h2>";
-      results += '<p>Category: ' + json.strCategory + '</p>';
-      results += '<p>Instructions: ' + json.strInstructions + '</p>';
-      results += '<img src="' + json.strMealThumb + '"/>';
+      results += '<h2>Recipe for ' + json.meals[0].strMeal + "</h2>";
+      results += '<p>Category: ' + json.meals[0].strCategory + '</p>';
+      results += '<p>Instructions: ' + json.meals[0].strInstructions + '</p>';
+      results += '<img src="' + json.meals[0].strMealThumb + '"/>';
       results += "<br/>";
       document.getElementById("searchMealResults").innerHTML = results;
     });
