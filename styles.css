@@ -1,0 +1,65 @@
+body {
+  background-color: #FEF5EF;
+  /*background-color: #f7fff7;*/
+  text-align: center;
+}
+
+form {
+  font-family: verdana;
+  display: inline-block;
+}
+
+h1 {
+  color: #814B51;
+  font-family: verdana;
+  text-align: center;
+}
+
+h2 {
+  color: #343434;
+  text-align: center;
+  font-family: verdana;
+}
+
+h3 {
+  color: #343434;
+  text-align: center;
+  font-family: verdana;
+}
+
+p {
+  color: #343434;
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
+}
+
+img {
+  display: flex;
+  margin: auto;
+}
+
+footer {
+  background-color: #E4BB97;
+  position:fixed;
+  width:100%;
+  height:50px;
+  bottom:0;
+  left:0;
+}
+
+footer a {
+  display: block;
+  color: #9D5C63;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+footer a:hover, :visited:hover {
+  color: #FFE66D;
+}
+
+footer a:visited {
+  color: #343434;
+}
